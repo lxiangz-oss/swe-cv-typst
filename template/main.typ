@@ -58,13 +58,6 @@
 
 // Technical skills
 #section([Technical Skills])
-- Languages: #for skill in configuration.skills.languages [
-  #skill,
-]
-- Frameworks and libraries: #for skill in configuration.skills.frameworks [
-  #skill,
-]
-- Tools: #for skill in configuration.skills.tools [
-  #skill,
-]
-
+- Languages: #configuration.skills.languages.join(", ")
+- Frameworks and libraries: #configuration.skills.frameworks.join(", ")
+- Tools: #configuration.skills.tools.join(", ")
